@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img
+        src="./logo.png"
+        alt="Form A Story Logo"
+      />
+    </section>
+
+    <section id="main">
+      <h1>
+        Write your own fable by filling in the information below. Submit the
+        form and read your fable!
+      </h1>
+      <hr />
+      <!--Add your form below:-->
+      <form action="./story.html" method="GET">
+      <label for="Animal-1">Animal-1</label><br>
+      <input id="Animal-1" type="text" name="Animal-1" ><br>
+      <label for="Another Animal">Another Animal</label><br>
+      <input id="Another Animal" type="text" name="Another Animal"><br>
+      <label for="One More Animal">One More Animal</label><br>
+      <input id="One More Animal" type="text" name="One More Animal"><br>
+      <label for="Verb-1">Verb-1</label><br>
+      <input id="Verb-1" type="text" name="Verb-1"><br>
+      <label for="Adjektive-1">Adjektive-1</label><br>
+      <input id="Adjektive-1" type="text" name="Adjektive-1"><br>
+      <label for="Number">Number</label><br>
+      <input id="Number" type="text" name="Number"><br>
+      <span>Yes or No</span><br>
+      <input id="yes" type="radio" name="answer" value="yes" required checked>
+      <label for="yes">YES</label>
+      <input id="no" type="radio" name="answer" value="no">
+      <label for="no">NO</label><br>
+      <label for="Speed">Relative Spped(ends in -er)</label> <br>
+      <select name="Speed" id="Speed">
+        <option value="Faster" selected>Faster</option>
+        <option value="Slower">Slower</option>
+      </select> <br>
+      <label for="quote">Motivational Quote</label><br>
+      <input id="quote" type="text" name="quote" list="quote-choices"required>
+         <datalist id="guote-choices"><br>
+           <option value="winner gets ice cream!"></option> 
+         </datalist> <br>
+         <label for="Meaningful Message">Meaningful Message:</label><br>
+         <textarea  name="message" id="message" rows="10" cols="30" ></textarea><br>
+        <input type="submit" value="Form My Story">
+      </form>
+    </section>
+  </body>
+</html>
